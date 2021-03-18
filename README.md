@@ -1,0 +1,2 @@
+# firstnextjs
+Next JS sample
