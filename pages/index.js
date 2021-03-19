@@ -18,7 +18,6 @@ function HomePage(props) {
 export async function getServerSideProps(context) {
     const res = await fetch('https://api.github.com/repos/vercel/next.js')
     const json = await res.json()
-    console.log(json)
     return {
         props: { stars: json.stargazers_count }
     }
